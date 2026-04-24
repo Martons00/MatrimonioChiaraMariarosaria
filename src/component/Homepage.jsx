@@ -1,13 +1,14 @@
 import React from "react";
 import "./css/HomePage.css";
-import heroImage from "../assets/photo_00.jpg";
+import heroImage from "../assets/photo_01.jpg";
 import BlurText from "./BlurText";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function HomePage() {
-
-const handleAnimationComplete = () => {
-  console.log('Animation completed!');
-};
+  const handleAnimationComplete = () => {
+    console.log("Animation completed!");
+  };
 
   return (
     <div
@@ -16,28 +17,20 @@ const handleAnimationComplete = () => {
     >
       <div className="homepage__overlay" />
 
+      <Header />
+
       <div className="homepage__content">
         <BlurText
-  text="Benvenuto nella tua homepage"
-  delay={200}
-  animateBy="words"
-  direction="top"
-  onAnimationComplete={handleAnimationComplete}
-  className="text-2xl mb-8"
-/>
-        <p className="homepage__subtitle">
-          Qui puoi inserire una frase di presentazione o una breve descrizione.
-        </p>
-
-        <div className="homepage__actions">
-          <button className="homepage__button homepage__button--primary">
-            Inizia ora
-          </button>
-          <button className="homepage__button homepage__button--secondary">
-            Scopri di più
-          </button>
-        </div>
+          text="Benvenuto nella galleria digitale"
+          delay={200}
+          animateBy="words"
+          direction="top"
+          onAnimationComplete={handleAnimationComplete}
+          className="homepage__title"
+        />
       </div>
+
+      <Footer />
     </div>
   );
 }
