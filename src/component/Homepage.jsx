@@ -1,8 +1,14 @@
 import React from "react";
 import "./css/HomePage.css";
 import heroImage from "../assets/photo_00.jpg";
+import BlurText from "./BlurText";
 
 export default function HomePage() {
+
+const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
+
   return (
     <div
       className="homepage"
@@ -11,7 +17,14 @@ export default function HomePage() {
       <div className="homepage__overlay" />
 
       <div className="homepage__content">
-        <h1 className="homepage__title">Benvenuto nella tua homepage</h1>
+        <BlurText
+  text="Benvenuto nella tua homepage"
+  delay={200}
+  animateBy="words"
+  direction="top"
+  onAnimationComplete={handleAnimationComplete}
+  className="text-2xl mb-8"
+/>
         <p className="homepage__subtitle">
           Qui puoi inserire una frase di presentazione o una breve descrizione.
         </p>
