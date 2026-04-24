@@ -33,12 +33,14 @@
 }
 
 .homepage__title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.1;
   position: absolute;
   top: 66.666%;
+  font-family: Georgia, "Times New Roman", serif;
+  color: white;
 }
 
 .homepage__subtitle {

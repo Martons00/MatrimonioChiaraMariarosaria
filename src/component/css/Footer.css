@@ -75,5 +75,5 @@
   height: auto;
   object-fit: contain;
   display: block;
-  color: #ffffff;
+  filter: brightness(0) invert(1);
 }

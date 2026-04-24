@@ -20,14 +20,15 @@ export default function HomePage() {
       <Header />
 
       <div className="homepage__content">
-        <BlurText
+        {/* <BlurText
           text="Benvenuto nella galleria digitale"
           delay={200}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
           className="homepage__title"
-        />
+        /> */}
+        <h1 className="homepage__title">Benvenuto nella galleria digitale</h1>
       </div>
 
       <Footer />
