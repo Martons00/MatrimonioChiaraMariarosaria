@@ -1,82 +1,72 @@
 .homepage {
   position: relative;
-  min-height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
   overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .homepage__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
   pointer-events: none;
+  background: rgba(0, 0, 0, 0.45);
 }
+
+/* .homepage__content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
+} */
 
 .homepage__content {
   position: relative;
   z-index: 1;
-  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 18rem 2rem 2rem;
   box-sizing: border-box;
 }
 
 .homepage__title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.1;
-  position: absolute;
-  top: 66.666%;
-  font-family: Georgia, "Times New Roman", serif;
-  color: white;
-}
-
-.homepage__subtitle {
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  margin-bottom: 2rem;
-  line-height: 1.6;
-  max-width: 700px;
-}
-
-.homepage__actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .homepage__button {
-  border: none;
-  padding: 0.9rem 1.5rem;
-  border-radius: 999px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
   cursor: pointer;
-  font-size: 1rem;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .homepage__button:hover {
-  transform: translateY(-2px);
-}
-
-.homepage__button--primary {
-  background: #ffffff;
-  color: #111111;
-}
-
-.homepage__button--secondary {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.15);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-color: white;
 }

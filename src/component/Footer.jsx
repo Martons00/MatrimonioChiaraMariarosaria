@@ -6,12 +6,11 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__left">
-          <div className="footer__dateTop">27 06</div>
-          <div className="footer__dateBottom">2026</div>
+          <div className="footer__date">27.06.26</div>
         </div>
 
         <div className="footer__center">
-          <div className="footer__line1">Chiara e</div>
+          <div className="footer__line1">Chiara</div>
           <div className="footer__line2">Maria Rosaria</div>
         </div>
 
